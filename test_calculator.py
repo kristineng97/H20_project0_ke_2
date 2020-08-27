@@ -12,3 +12,8 @@ def test_add_exercise_2():
     y = 0.2
     tol = 1e-10
     assert (calculator.add(x,y) - 0.3) < tol
+
+def test_add_exercise_3():
+    x = "Hello "
+    y = "World"
+    assert calculator.add(x,y) == "Hello World"
