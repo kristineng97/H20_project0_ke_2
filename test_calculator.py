@@ -45,3 +45,11 @@ def test_cos_exercise_4():
     N = 30
     tol = 1e-10
     assert abs(calculator.cos(x,N) - math.cos(x)) < tol
+
+def test_add_TypeError_exercise_5():
+    with pytest.raises(TypeError):
+        calculator.add("Hello", 3)
+
+def test_divide_ZeroDivisionError_exercise_5():
+    with pytest.raises(ZeroDivisionError):
+        calculator.divide(5,0)
