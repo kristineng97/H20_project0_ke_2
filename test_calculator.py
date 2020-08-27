@@ -1,6 +1,8 @@
-def test_add():
-    a = 1
-    b = 2
-    assert a + b == 3
+#from calculator import *
+import pytest
+import calculator
 
-test_add()
+def test_add():
+    x = 1
+    y = 2
+    assert calculator.add(x,y) == 3
