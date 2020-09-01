@@ -45,4 +45,3 @@ def cos(x,N):
     for n in range(N+1):
         sum += ((-1)**n * x**(2*n))/(factorial(2*n))
     return sum
-    
