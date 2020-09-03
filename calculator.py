@@ -1,5 +1,5 @@
-def add(x,y):
-    return (x+y)
+def add(x, y):
+    return (x + y)
 
 def factorial(n):
     if n < 0:
@@ -8,24 +8,24 @@ def factorial(n):
         return 1
     else:
         product = 1
-        for i in range(1, n+1):
+        for i in range(1, n + 1):
             product *= i
         return product
 
-def sin(x,N):
+def sin(x, N):
     sum = 0
-    for n in range(N+1):
-        sum += ((-1)**n * x**(2*n + 1))/(factorial(2*n + 1))
+    for n in range(N + 1):
+        sum += ((-1)**n * x**(2*n + 1)) / (factorial(2*n + 1))
     return sum
 
-def divide(x,y):
-    return (x/y)
+def divide(x, y):
+    return (x / y)
 
-def multiply(x,y):
-    return x*y
+def multiply(x, y):
+    return x * y
 
-def cos(x,N):
+def cos(x, N):
     sum = 0
-    for n in range(N+1):
-        sum += ((-1)**n * x**(2*n))/(factorial(2*n))
+    for n in range(N + 1):
+        sum += ((-1)**n * x**(2*n)) / (factorial(2*n))
     return sum
